@@ -18,18 +18,21 @@ You can install the tradingLibrary package by using the following command:
 
 You can import the tradingLibrary package and use its functions like this:
 ```python
-import tradingLibrary
+fromt tradingLibrary import TradingLibrary
 
-tradingLibrary.exampleFunction()
+# to test functions
+testLibrary = TradingLibrary()
 
-## Contributing
-If you would like to contribute to the tradingLibrary package, please submit a pull request with your changes. All contributions are welcome!
+a = [1356.958,2.5251,3.68588,-58,-255.8]
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+# test report
+print(testLibrary.report.pnl(a))
 
-## Acknowledgements
-Thank you to all contributors who have helped make the tradingLibrary package possible.
+# test statistics
+print(testLibrary.statistics.basicDataArray(a))
+
+# test utils
+print(testLibrary.utils.roundArray(a,2))
 
 
 
